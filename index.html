@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <div class="modal">
+        <dic id="inner-modal">
+            <h2 class="modal-text">Enter a number to generate a X by X grid.</h2>
+            <input type="number" max="100" id="square-num">
+            <button class="modal-button" onclick="generateFreshGrid()">GO!</button>
+        </dic>
+    </div>
+    <div class="header">
+        <em>Click to generate a new grid: </em>
+        <button onclick="openModal()">GO</button>
+    </div>  
+</body>
+</html>
