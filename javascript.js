@@ -69,7 +69,9 @@ const appendSquareToRow = function (row, i) {
 }
 
 const mouseInSquare = function (element) {
-    element.style.backgroundColor = "black";
+    /* element.style.backgroundColor = "black"; */
+    let randomColor = randomizeColor();
+    element.style.backgroundColor = `rgb(${randomColor[0]},${randomColor[1]},${randomColor[2]})`;
 }
 
 const enforceInputMax = function (element) {
@@ -80,5 +82,14 @@ const enforceInputMax = function (element) {
         alert(`Choose a number below ${max}`);
         return false;
     }
+}
+
+const randomizeColor = function () {
+    let red = Math.random() * 256;
+    let green = Math.random() * 256;
+    let blue = Math.random() * 256;
+
+    return [red,green,blue];
+    
 }
 
